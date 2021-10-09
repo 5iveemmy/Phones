@@ -1,0 +1,155 @@
+/* for interface*/
+.container {
+  padding: 6px 30px 50px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.shop {
+  color: white;
+  width: 60%;
+  line-height: 42px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.for-input {
+  padding: 10px 13px;
+  width: 66%;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+
+.search {
+  padding: 11px 15px;
+  border-radius: 7px;
+  outline: none;
+  background-color: #007ee5;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.search:hover {
+  background-color: #0c283f;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+  /* border: 0.5px solid rgb(218, 218, 218); */
+  outline: none;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.gadgets {
+  width: 100%;
+}
+
+.for-gadgets {
+  width: 30vw;
+}
+
+/* for side-bar*/
+
+.side-bar {
+  background-color: #1e242f;
+  /* width: 24%; */
+  color: white;
+  width: fit-content;
+  padding: 1px 3rem 1px 9px;
+  /* position: fixed; */
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar ul {
+  padding-inline-start: 5px;
+}
+
+.side-bar li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+/*for card */
+.cards {
+  margin-left: 2rem;
+}
+.card {
+  background-color: #1e242f;
+  padding: 0.5rem 0.6rem;
+  max-width: 13rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  /* text-align: right; */
+}
+.card li {
+  list-style: none;
+  padding: 4px 0px;
+}
+.card ul {
+  padding-inline-start: 5px;
+  text-align: left;
+}
+
+.phone {
+  width: 100%;
+}
+/* .card-wrap {
+  padding: 10px 1rem;
+} */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.span {
+  border: 1px solid #ababab;
+  padding: 4px 14px;
+  font-size: 12px;
+  margin-left: 10rem;
+}
+
+.phone-specs {
+  color: #bfbfbf;
+}
+
+.buy {
+  text-align: center;
+  padding: 10px 40px;
+  background-color: #007ee5;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+li.iphone {
+  font-size: 20px;
+}
+
+li.size {
+  font-size: 13px;
+}
+
+li.unit {
+  font-size: 12px;
+}
+
+li.price {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+li.available {
+  font-size: 14px;
+}
