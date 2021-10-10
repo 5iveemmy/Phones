@@ -63,6 +63,7 @@
   color: white;
   width: fit-content;
   padding: 1px 3rem 1px 9px;
+  height: fit-content;
   /* position: fixed; */
 }
 .filter {
@@ -88,6 +89,7 @@
   padding: 0.5rem 0.6rem;
   max-width: 13rem;
   text-align: center;
+  margin: 20px 30px;
   color: white;
   position: relative;
   /* text-align: right; */
@@ -104,9 +106,14 @@
 .phone {
   width: 100%;
 }
-/* .card-wrap {
-  padding: 10px 1rem;
-} */
+
+.cards-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: auto;
+  padding: 10px 1rem; */
+}
 
 .flex {
   display: flex;

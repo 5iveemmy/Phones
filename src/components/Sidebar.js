@@ -18,8 +18,8 @@ function Sidebar() {
         throw response;
       })
       .then((data) => {
-        console.log(data);
-        setPhones(data.results);
+        // console.log(data.data.data);
+        setPhones(data.data.data);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
@@ -83,8 +83,7 @@ function Sidebar() {
       <div className="cards">
         <div className="cards-wrap">
           {phones.length > 0 &&
-            phones.map((phones) => <Card key={phones.id} />)}
-          <Card />
+            phones.map((phone) => <Card key={phone.id} {...phone} />)}
         </div>
       </div>
     </div>
