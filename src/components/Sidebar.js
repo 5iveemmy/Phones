@@ -9,6 +9,26 @@ function Sidebar() {
   const API_URL =
     "https://eze-mobile-api-staging.herokuapp.com/api/v1/products/price?category=Smartphones&brand=Apple&sort=lowestAsk&hoursInterval=24&limit=20&page=1&slugId=";
 
+  const reduceMultipleArray = (array) => {
+    return [].concat.apply([], array);
+  };
+  const shareProperty = (data) => {
+    return data.map((data) => {
+      const { name, imgUrl, slugId, rank } = data;
+      return data.data.map((item) => ({
+        name,
+        imgUrl,
+        slugId,
+        rank,
+        ...item.price,
+      }));
+    });
+  };
+
+  const destruct = (data) => {
+    return reduceMultipleArray(shareProperty(data));
+  };
+
   useEffect(() => {
     fetch(API_URL)
       .then((response) => {
@@ -18,8 +38,11 @@ function Sidebar() {
         throw response;
       })
       .then((data) => {
-        // console.log(data.data.data);
-        setPhones(data.data.data);
+        console.log(data.data.data);
+        console.log(
+          destruct(data.data.data).sort((a, b) => b.amount - a.amount)
+        );
+        setPhones(destruct(data.data.data).sort((a, b) => b.amount - a.amount));
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
