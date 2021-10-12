@@ -72,9 +72,21 @@ function Sidebar() {
         </div>
         <div className="filter">
           <h2>Price Filter</h2>
-          <progress value="10" max="100">
+          {/* <progress value="10" max="100">
             10%
-          </progress>
+          </progress> */}
+          <div className="range-filter">
+            <div className="range-controls">
+              <div className="scale">
+                {" "}
+                <div class="bar"></div>
+                <span className="for-min">$100</span>
+                <div className="toggle min-toggle"></div>
+                <span className="for-max">$1000</span>
+                <div className="toggle max-toggle"></div>
+              </div>
+            </div>
+          </div>
           <center>
             <input type="text" className="min" placeholder="Min" />
             <input type="text" className="max" placeholder="Max" />
