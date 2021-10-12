@@ -61,7 +61,7 @@ function Sidebar() {
       <div className="side-bar">
         <div className="for-category">
           <h2>Categories</h2>
-          <ul>
+          <ul className="categories">
             <li>All</li>
             <li>iphone</li>
             <li>Samsung</li>

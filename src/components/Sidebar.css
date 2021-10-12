@@ -59,13 +59,26 @@
 
 .side-bar {
   background-color: #1e242f;
-  /* width: 24%; */
   color: white;
   width: fit-content;
   padding: 1px 2rem 1px 9px;
   height: fit-content;
-  /* position: fixed; */
 }
+.side-bar ul {
+  padding-inline-start: 5px;
+}
+
+.side-bar li {
+  list-style: none;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.categories li:hover {
+  color: #4a84b3;
+  font-size: 18px;
+}
+
 .filter {
   display: flex;
   flex-direction: column;
@@ -142,15 +155,6 @@ center {
   padding: 10px;
 }
 
-.side-bar ul {
-  padding-inline-start: 5px;
-}
-
-.side-bar li {
-  list-style: none;
-  padding-bottom: 20px;
-}
-
 /*for card */
 .cards {
   margin-left: 1rem;
@@ -206,8 +210,13 @@ center {
   padding: 10px 40px;
   background-color: #007ee5;
   color: white;
+  cursor: pointer;
   border: none;
-  border-radius: 7px;
+  border-radius: 5px;
+}
+.buy:hover {
+  background-color: #175e97;
+  transition: ease-in-out 0.5s;
 }
 
 li.iphone {
