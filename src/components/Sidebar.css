@@ -44,7 +44,7 @@
 .form {
   display: flex;
   justify-content: space-between;
-  width: 66%;
+  width: 81%;
 }
 
 .gadgets {
@@ -69,6 +69,20 @@
 .filter {
   display: flex;
   flex-direction: column;
+}
+
+.min,
+.max {
+  padding: 5px 6px;
+  width: 85%;
+  border-radius: 9px;
+  margin: 6px;
+  border: none;
+  outline: none;
+}
+
+center {
+  padding: 10px;
 }
 
 .side-bar ul {
@@ -124,7 +138,7 @@
   border: 1px solid #ababab;
   padding: 4px 14px;
   font-size: 12px;
-  margin-left: 9rem;
+  margin-left: 8.3rem;
 }
 
 .phone-specs {

@@ -75,8 +75,10 @@ function Sidebar() {
           <progress value="10" max="100">
             10%
           </progress>
-          <input type="text" placeholder="Min" />
-          <input type="text" placeholder="Max" />
+          <center>
+            <input type="text" className="min" placeholder="Min" />
+            <input type="text" className="max" placeholder="Max" />
+          </center>
         </div>
         <div className="Storage">
           <ul>
